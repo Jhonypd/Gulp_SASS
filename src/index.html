@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/f2bfb1770b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Portfolio</title>
+</head>
+
+<body id="top">
+    <nav class="nav_menu_lt">
+
+        <ul class="navbar_menu_lt">
+            <li class="menu_l clicked">
+                <a href="#home" class="link_primary"><span>Home</span></a>
+            </li>
+            <li class="menu_l">
+                <a href="#about" class="link_primary"><span>About</span></a>
+            </li>
+            <li class="menu_l">
+                <a href="#softSkill" class="link_primary"><span>Soft Skills</span></a>
+            </li>
+            <li class="menu_l">
+                <a href="#" rel="contact" class="link_primary nav-modal-open"><span>Contacts</span></a>
+            </li>
+        </ul>
+        <ul class="navbar_user_l">
+            <li>
+                <div class="p_img_l" id="perfil">
+                    <span>Perfil</span>
+                    <img src="./images/jhony/perfil.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header id="hg_300" class="header">
+
+        <!-- main Navigation -->
+        <div class="main_nav_container">
+            <div class="container">
+                <div class="row row-300">
+                    <div class="col-lg-12 text-right">
+                        <button class="btn btn-dark menu_des">
+                            <i class="fa-solid fa-bars"></i>
+                            <!-- <a href="#" class="link_primary">
+                            </a> -->
+                        </button>
+
+                        <div id="logo" class="logo_container logo_id">
+                            <p style="padding: 0; margin: 0;"></p>
+                        </div>
+                        <nav class="navbar">
+
+                            <ul id="menu-active" class="navbar_menu">
+                                <li class="menu_l clicked"><a href="#home" class="link_primary">Home</a></li>
+                                <li class="menu_l"><a href="#about" class="link_primary">About</a></li>
+                                <li class="menu_l"><a href="#softSkill" class="link_primary">Soft Skills</a></li>
+                                <li class="menu_l"><a href="#" rel="contact"
+                                        class="link_primary nav-modal-open">Contacts</a></li>
+                            </ul>
+
+                            <ul class="navbar_user">
+                                <li>
+                                    <a href="#" class="link_primary">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="link_primary">
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <div class="p_img">
+                                        <img src="./images/jhony/perfil.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="home" class="home_top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="home_top_img">
+                        <img src="./images/jhony/jhony_1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-right home_top_col">
+                    <div class="home_top_content d-flex flex-column align-items-center float-right">
+                        <div class="section_title">
+                            <p>Olá, eu sou</p>
+                            <h1>Jhony Pereira.</h1>
+                            <h2 style="font-family: var($font-family-1);">Desenvolvedor Front-End</h2>
+                        </div>
+                        <ul class="timer">
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="day" class="timer_num">0</div>
+                                <div class="timer_unit">Day</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="hour" class="timer_num">0</div>
+                                <div class="timer_unit">Hours</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="minute" class="timer_num">0</div>
+                                <div class="timer_unit">Mins</div>
+                            </li>
+                            <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                                <div id="second" class="timer_num">0</div>
+                                <div class="timer_unit">Sec</div>
+                            </li>
+                        </ul>
+                        <div class="home_top_button_1 home_top_button">
+                            <a class="nav-modal-open" rel="projetos" href="#projetos">Projetos</a>
+                        </div>
+
+                        <div id="projetos" class=" projeto_top visually-hidden">
+
+                            <div class="container">
+                                <div class="row row-cols-1 projeto_top_row">
+
+                                    <div class="projeto">
+                                        <div class="img-container">
+                                            <img src="./images/skills/project_teamwork_hpdk.svg" alt="">
+                                        </div>
+                                        <div class="title-projeto">
+                                            <h5>projeto 1</h5>
+                                        </div>
+                                        <div class="conteudo_projeto">
+                                            <p>em breve</p>
+                                        </div>
+                                        <button class="btn btn-dark btn-projeto" id="ver_mais"><i
+                                                class="fa-solid fa-code"></i></button>
+                                    </div>
+
+                                    <div class="projeto">
+                                        <div class="img-container">
+                                            <img src="./images/skills/project_mobile_wireframe_re_jxui.svg" alt="">
+                                        </div>
+                                        <div class="title-projeto">
+                                            <h5>projeto 2</h5>
+                                        </div>
+                                        <div class="conteudo_projeto">
+                                            <p>em breve</p>
+                                        </div>
+                                        <button class="btn btn-dark btn-projeto" id="ver_mais"><i
+                                                class="fa-solid fa-code"></i></button>
+                                    </div>
+
+                                    <div class="projeto">
+                                        <div class="img-container">
+                                            <img src="./images/skills/project_server_cluster_jwwq.svg" alt="">
+                                        </div>
+                                        <div class="title-projeto">
+                                            <h5>projeto 3</h5>
+                                        </div>
+                                        <div class="conteudo_projeto">
+                                            <p>em breve</p>
+                                        </div>
+                                        <button class="btn btn-dark btn-projeto" id="ver_mais"><i
+                                                class="fa-solid fa-code"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ************************** About ************************** -->
+
+
+    <div id="about" class="about_top">
+        <div class="container about_top_container">
+            <div class="row align-items-center dis_responsivo">
+
+                <div class="col-lg-6 text-right home_top_col">
+                    <div class="about_top_content d-flex flex-column align-items-center float-left">
+                        <div class="section_title_about_top">
+                            <h2 style="font-family: var(--font-family-1);">Sobre mim</h2>
+                        </div>
+                        <div class="box_about">
+                            <p class="about_p">Meu nome é <strong>Jhony Pereira</strong> e sou muito louco por
+                                tecnologia, todo esse mundo me encanta. Meu primeiro contato foi por meio de um amigo
+                                que iniciou em um curso técnico, e eu via tudo que ele fazia, mas não tentava
+                                reproduzir, pois, não tinha uma máquina. Em 2021 a empresa a qual eu trabalho iniciou um
+                                projeto para criação de um Aplicativo banking, dai então com todo o movimento na empresa
+                                eu comecei a ir atrás de vídeos e procurar opiniões sobre, criei coragem par ir em
+                                frente com esse desejo, pois eu não sabia até então por onde começar, e achava tudo
+                                muito complexo e impossível para mim, então em 2022 eu iniciei um curso pela
+                                <strong>EBAC</strong>, onde estou compreendendo cada dia mais sobre tecnologias voltadas
+                                ao front-end. <br> Tenho muito interesse em um dia ir para o back-end.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about_top_img">
+                        <img src="./images/jhony/jhony_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ************************** Skills ************************** -->
+
+    <div id="softSkill" class="skill_top">
+
+        <div class="container">
+            <div class="row row-cols-1 skill_top_row">
+                <div class="col text-right skill_top_col">
+                    <div class="skill_top_content d-flex flex-column align-items-center float-left">
+                        <div class="section_title">
+                            <h2 style="font-family: var($font-family-1);">Habilidades pessoais</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="img-container">
+                        <img src="./images/skills/undraw_team_chat.svg" alt="">
+                    </div>
+                    <div class="title-skill">
+                        <h5>Comunicativo</h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>Estou habituado a ouvir bem como retransmitir o que ouço, atualmente sou gerente de vendas,
+                            isso me trouxe a exercer mais essa habilidade</p>
+                    </div>
+                    <button class="btn btn-dark btn-skill" id="ver_mais"><i
+                            class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+
+                <div class="skill">
+                    <div class="img-container">
+                        <img src="./images/skills/undraw_percentages.svg" alt="">
+                    </div>
+                    <div class="title-skill">
+                        <h5>Liderança</h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>Sou gerente de vendas a 5 anos, com isso tenho desempenhado um papel importante na empresa
+                            atual, auxiliando na construção de equipes de alta performance</p>
+                    </div>
+                    <button class="btn btn-dark btn-skill" id="ver_mais"><i
+                            class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+
+                <div class="skill">
+                    <div class="img-container">
+                        <img src="./images/skills/undraw_percentages.svg" alt="">
+                    </div>
+                    <div class="title-skill">
+                        <h5>Criativo</h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>Meu dia-a-dia exige muita criatividade para elaborar plano de ações que tragam resultados a
+                            curto e médio prazo, me vejo desempenhando isso muito bem</p>
+                    </div>
+                    <button class="btn btn-dark btn-skill" id="ver_mais"><i
+                            class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+
+                <div class="skill">
+                    <div class="img-container">
+                        <img src="./images/skills/undraw_percentages.svg" alt="">
+                    </div>
+                    <div class="title-skill">
+                        <h5>Colaborativo</h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>Sei lhe dar muito bem com trabalhos individuais, mas em equipe sempre chego mais longe, pois
+                            sei administrar ideias</p>
+                    </div>
+                    <button class="btn btn-dark btn-skill" id="ver_mais"><i
+                            class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+
+                <div class="skill">
+                    <div class="img-container">
+                        <img src="./images/skills/undraw_thought_process.svg" alt="">
+                    </div>
+                    <div class="title-skill">
+                        <h5>Disposto</h5>
+                    </div>
+                    <div class="conteudo">
+                        <p>Aprendo algo novo todos os dias, me permito a ser observado, e costumo pedir feedbacks,
+                            sempre disposto a aprender</p>
+                    </div>
+                    <button class="btn btn-dark btn-skill" id="ver_mais"><i
+                            class="fa-solid fa-circle-exclamation"></i></button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal Body bs5 -->
+
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal_bs_5">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL CONTCTS -->
+
+    <div id="contact" class="visually-hidden">
+
+        <form action="post" class="form">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Name</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Enter your name.</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="text" name="date" id="date" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Enter your date invalid</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="hour" class="form-label">hour</label>
+                <input type="text" name="hour" id="hour" class="form-control" placeholder="" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Enter your Hour invalid</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder=""
+                    aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Enter your phone invalid</small>
+            </div>
+
+            <div class="col-8 contact-input d-inline-flex text_forms">
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I accept the terms
+                    </label>
+                </div>
+            </div>
+    </div>
+    </form>
+
+    </div>
+
+
+
+    <!-- MODAL PERFIL -->
+
+    <div id="fade_modal" class="hide"></div>
+    <div id="modal_profile" class="hide">
+
+        <div class="modal_header">
+            <h5 class="modal_title"><i class="fa-solid fa-circle-user"></i></h5>
+            <button class="btn btn-dark" id="close_modal"> <i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="modal_body">
+            <div class="card_profile">
+                <div class="card_profile_img">
+                    <img src="https://media.licdn.com/dms/image/C5603AQGsBEZSUEomHw/profile-displayphoto-shrink_200_200/0/1637033640811?e=1694044800&v=beta&t=aD8o41X21ZCzdQsPEW1d5oW7vhTj7iq1ka3WK1ZNBR4"
+                        alt="foto_linkedin" class="img-fluid">
+                </div>
+                <div class="card_profile_header">
+                    <h3 class="card_name">Jhony Pereira</h3>
+                    <div id="text_profile"
+                        style="margin-left: 6.5em; margin-top: .5em; background-color: black; padding: .5em 0; width: 50%; font-size: 12px;"
+                        class="text_profile">
+                        <p style="font-size: 10px; left: 1em; bottom: 1px; position: absolute;">CMD</p>
+                        Jhony Pereira
+                    </div>
+                </div>
+                <ul class="card_redes">
+                    <li>
+                        <a href="https://www.linkedin.com/in/jhonypereiraduarte/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:jhony-16@live.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/@jhonydph" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="card_skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-js"></i> JS</li>
+                        <li><i class="fa-brands fa-react"></i> React</li>
+                        <li><i class="fa-brands fa-github"></i> Github</li>
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-bootstrap"></i> BS5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="scrolltop">
+        <a href="#top" class="top-button">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div
+                        class="footer_top_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+                        <ul class="footer_top_nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Soft Skills</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div
+                        class="footer_top_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin"></i>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_top_nav_container">
+                        <div class="cr">&copy;2023 todos os direitos reservados. <br>Este modelo é feito por
+                            <a href="https://github.com/Jhonypd">Jhony Pereira
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+</html>

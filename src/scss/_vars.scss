@@ -1,0 +1,46 @@
+$font-family-1: 'Carrois Gothic', sans-serif;
+$font-family-2: 'Raleway', sans-serif;
+
+$color-primary: #0a0a0b;
+$color-secondary: #252939;
+$color-tertiary: #215bf0;
+$color-quaternary: #ffffff;
+$color-quinary: #170045;
+$font-w1: 100;
+$font-w2: 200;
+$font-w3: 300;
+$font-w4: 400;
+$font-w5: 500;
+$font-w6: 600;
+$font-w7: 700;
+$font-w8: 800;
+$font-w9: 900;
+$link-primary: #215bf0;
+$link-secondary: #c80df7;
+$link-tertiary: #ffffff;
+
+
+$bg-color: rgba(89, 3, 92, 0.389);
+/*hover*/
+
+$link-hover-primary: 0 0 0.625rem #215bf0, 0 0 10px #215bf0, 0 0 10px #215bf0;
+$link-hover-secondary: 0 0 0.625rem #c80df7, 0 0 10px #c80df7, 0 0 10px #c80df7;
+$link-hover-tertiary: 0 0 0.625rem #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff;
+
+
+
+
+
+@mixin conteudo($conteudo: $bg-color){
+    background: $conteudo;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    top: 50%;
+    right: 0;
+    padding: 0 1.5625rem;
+    z-index: -1;
+}
+

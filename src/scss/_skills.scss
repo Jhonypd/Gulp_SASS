@@ -1,0 +1,115 @@
+.skill_top {
+    width: 100%;
+    height: auto;
+    padding: 4.375rem 0 0;
+    background: $color-primary;
+
+    .container {
+        .skill_top_row {
+            display: inline-flex;
+            gap: 2rem 1.5rem;
+            justify-content: center;
+
+            .skill_top_col {
+
+                .skill_top_content {
+                    top: 1rem;
+
+                    .section_title ::after {
+                            display: block;
+                            position: absolute;
+                            top: calc(100% + 0px);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 19.0625rem;
+                            height: 0.3125rem;
+                            background: $color-tertiary;
+                            content: '';
+                    }
+                }
+            }
+
+            .skill {
+                 
+                background: #3f3f3f;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 300px;
+                min-height: 13.75rem !important;
+                padding: 1.5625rem;
+                text-align: justify;
+                box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(255, 255, 255, 0.389);
+                top: 1.5rem;
+
+                
+
+                .img-container {
+                    margin-bottom: 0.625rem;
+
+                    img {
+                        width: 100%;
+                        height: 6.25rem;
+                    }
+                }
+
+                .conteudo {
+                    @include conteudo;
+
+                    p {
+                        padding: .5rem;
+                    }
+                }
+
+                .title-skill {
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                }
+
+                .btn-skill {
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+
+                }
+                .btn-skill:hover {
+
+                    i {
+                        color: $link-secondary;
+                        border-radius: 50%;
+                        box-shadow: $link-hover-secondary;
+                    }
+                }
+
+            }
+            .skill::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 1.25rem solid transparent;
+                border-top: 1.25rem solid $link-secondary;
+                border-right: 1.25rem solid $link-secondary;
+            }
+            .skill:hover{
+
+                .conteudo {
+                    width: 100%;
+                    height: 80%;
+                    overflow: hidden;
+                    top: 20%;
+                    right: 0;
+                    padding: 0 1.5625rem;
+                    opacity: 1;
+                    z-index: 1;
+                    border-radius: 1.25rem 1.25rem 0 0;
+                    transition: all 400ms ease-out;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+.nav_menu_lt {
+    display: none;
+    .navbar_menu_lt{
+        .clicked {
+            background-color: $link-secondary;
+            border-radius: 5%;
+        }
+        .clicked:hover{
+            box-shadow: $link-hover-tertiary;
+        }
+    }
+}

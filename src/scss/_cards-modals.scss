@@ -1,0 +1,296 @@
+#fade_modal.hide, #modal_profile.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+#fade_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+#modal_profile {
+    position: fixed;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 17rem;
+    max-width: 90%;
+    border-radius: 0.5rem;
+    background-color: $color-secondary;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+
+    .modal_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: .5rem;
+
+        button {
+            margin: .6rem .5rem 0;
+        }
+
+        h5 {
+            font-size: 30px;
+            padding-left: .5rem;
+            margin: .6rem .5rem 0;
+
+            i {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 40px;
+                height: 40px;
+                font-size: 1.125rem;
+                transition: color 0.3s ease;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.modal_bs_5 {
+    //modal bs5
+    background: $color-secondary;
+}
+
+.card_profile {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: $color-secondary;
+    margin-bottom: 0.3125rem;
+    padding: 0.25rem 0 2.1875rem;
+
+    .card_profile_img {
+        display: inline-block;
+        height: 8.125rem;
+        width: 8.125rem;
+        z-index: 1;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+    }
+    .card_redes {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: $color-quinary;
+        position: absolute;
+        bottom: -6.25rem;
+        left: 0;
+        transition: all 0.5s ease 0s;
+
+        a {
+            display: block;
+            padding: 0.625rem;
+            font-size: 1.0625rem;
+
+        }
+        a:hover {
+            color: $color-quaternary;
+            background-color: $link-secondary;
+            border-radius: 50%;
+            transition: 0.2s;
+        }
+    }
+    .card_profile_img::before {
+        content: '';
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background-color: $link-secondary;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.9;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .card_profile_img::after {
+        content: '';
+        width: 100%;
+        border-radius: 50%;
+        background-color: $link-secondary;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+    }
+
+    .card_profile_header {
+        margin-bottom: -1.1875rem;
+
+        ul {
+            display: inline-flex;
+            padding-left: 0;
+
+            li {
+                display: inline-block;
+                padding: .2rem;
+            }
+        }
+
+        .card_name {
+            padding: 0;
+            margin: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+    }
+
+    .card_skills {
+        text-align: left;
+        padding: 0.9375rem;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                border: 1px solid #0a0a0b;
+                color: $color-quaternary;
+                border-radius: 0.125rem;
+                display: inline-block;
+                font-size: 0.75rem;
+                margin: 0 0.4375rem 0.4375rem 0;
+                padding: 0.3125rem;
+
+                
+            }
+            li:hover {
+                background-color: $color-primary;
+                color: $link-secondary;
+                cursor: pointer;
+                font-weight: 600;
+                box-shadow: $link-hover-secondary;
+            }
+        }
+    }
+}
+.card_profile:hover {
+    height: 100%;
+
+    .card_profile_img::before {
+        height: 100%;
+    }
+
+    .card_redes {
+        bottom: 0;
+    }
+
+}
+
+.projeto_top {
+
+    .container {
+
+        .projeto_top_row {
+            display: inline-flex;
+            gap: 1rem;
+            justify-content: center;
+
+            .projeto {
+                background: #3f3f3f;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                min-height: 13.75rem !important;
+                padding: 1.5625rem;
+                text-align: justify;
+                box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(255, 255, 255, 0.389);
+                margin-bottom: .8rem;
+
+                .img-container {
+                    margin-bottom: 0.625rem;
+
+                    img {
+                        width: 100%;
+                        height: 6.25rem;
+                    }
+
+                }
+
+                .conteudo_projeto {
+                    @include conteudo;
+
+                    p {
+                        padding: .5rem;
+                    }
+                }
+
+                .title-projeto {
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                }
+
+                .btn-projeto {
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+
+                }
+                .btn-projeto:hover {
+
+                    i {
+                        color: $link-secondary;
+                        border-radius: 50%;
+                        box-shadow: $link-hover-secondary;
+                    }
+                }
+            }
+            .projeto::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 1.25rem solid transparent;
+                border-top: 1.25rem solid $link-secondary;
+                border-right: 1.25rem solid $link-secondary;
+            }
+            .projeto:hover {
+                .conteudo_projeto {
+                    width: 100%;
+                    height: 80%;
+                    overflow: hidden;
+                    top: 20%;
+                    right: 0;
+                    padding: 0 1.5625rem;
+                    opacity: 1;
+                    z-index: 1;
+                    border-radius: 1.25rem 1.25rem 0 0;
+                    transition: all 400ms ease-out;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.form { //altera no modal do bs5
+    .text_forms {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-muted {
+        display: none;
+        color: $color-quaternary !important;
+    }
+
+}
+
+#scrolltop {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    background: transparent;
+    border-radius: 20%;
+    background-size: cover;
+    z-index: 10;
+
+    .top-button {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.25rem;
+        font-size: 2rem;
+    }
+}
